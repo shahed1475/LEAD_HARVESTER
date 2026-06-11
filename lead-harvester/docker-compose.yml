@@ -1,0 +1,14 @@
+version: "3.9"
+
+services:
+  harvester:
+    build: .
+    image: lead-harvester:latest
+    container_name: lead-harvester
+    restart: unless-stopped
+    env_file: .env
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "50m"
+        max-file: "5"

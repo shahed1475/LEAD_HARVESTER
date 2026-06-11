@@ -1,0 +1,29 @@
+# HTTP client (HTTP/2 support helps bypass some bot detection)
+httpx[http2]==0.28.1
+
+# HTML parsing
+beautifulsoup4==4.14.3
+lxml==6.0.2
+
+# Headless browser for JS-heavy sites (Google Maps)
+playwright==1.49.0
+
+# Data models & settings
+pydantic==2.12.5
+pydantic-settings==2.13.1
+
+# Retry logic
+tenacity==9.1.2
+
+# User-agent rotation
+fake-useragent==2.2.0
+
+# Async file I/O
+aiofiles==25.1.0
+
+# Env file loading
+python-dotenv==1.0.1
+
+# Mock server (dev only — not needed in production container)
+fastapi==0.115.5
+uvicorn==0.32.1
